@@ -1,0 +1,7 @@
+<form (ngSubmit)="updateProject()">
+    <input type="text" placeholder="Title" [(ngModel)]="project.title" name="title" required />
+    <textarea placeholder="Description" [(ngModel)]="project.description" name="description" required></textarea>
+    <input type="text" placeholder="Technology" [(ngModel)]="project.technology" name="technology" required />
+    <button type="submit">Update Project</button>
+  </form>
+  
