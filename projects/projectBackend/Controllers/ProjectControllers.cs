@@ -16,15 +16,7 @@ namespace projectBackend.Controllers
         }
 
         [HttpGet]
-            public async Task<IActionResult> GetAll()
-            {
-                var projects = await _service.GetAllAsync();
-                if (projects.Count == 0)
-                {
-                    return NoContent(); // Return 204 if no projects are found
-                }
-                return Ok(projects); // Return 200 with the list of projects
-            }
+        public async Task<IActionResult> GetAll() => Ok(await _service.GetAllAsync());
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id) => Ok(await _service.GetByIdAsync(id));
@@ -35,6 +27,7 @@ namespace projectBackend.Controllers
             await _service.CreateAsync(project);
             return Ok(project);
         }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, Project project)
         {

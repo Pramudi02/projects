@@ -1,8 +1,12 @@
-<nav>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/add">Add Project</a></li>
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <ul class="navbar-menu">
+    <li><a routerLink="/" class="navbar-link">Home</a></li>
+    <li><a routerLink="/add" class="navbar-link">Add Project</a></li>
   </ul>
 </nav>
 
-<router-outlet></router-outlet> <!-- This is where the routed component will be displayed -->
+<!-- Main content area where routed components will be displayed -->
+<main class="main-content">
+  <router-outlet></router-outlet> <!-- Routed component will appear here -->
+</main>

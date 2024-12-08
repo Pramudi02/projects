@@ -41,3 +41,87 @@ C:\Users\pramu\OneDrive\Desktop\git_projects\projects\projects\projectBackend\ob
 C:\Users\pramu\OneDrive\Desktop\git_projects\projects\projects\projectBackend\obj\Debug\net9.0\projectBackend.pdb
 C:\Users\pramu\OneDrive\Desktop\git_projects\projects\projects\projectBackend\obj\Debug\net9.0\projectBackend.genruntimeconfig.cache
 C:\Users\pramu\OneDrive\Desktop\git_projects\projects\projects\projectBackend\obj\Debug\net9.0\ref\projectBackend.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\appsettings.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.staticwebassets.endpoints.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.exe
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.deps.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.runtimeconfig.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.pdb
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\DnsClient.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Snappier.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.csproj.AssemblyReference.cache
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.AssemblyInfoInputs.cache
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.AssemblyInfo.cs
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.csproj.CoreCompileInputs.cache
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\scopedcss\bundle\projectBackend.styles.css
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.projectBackend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.projectBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.build.projectBackend.props
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.projectBackend.props
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.projectBackend.props
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectB.2EBF4CFC.Up2Date
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\refint\projectBackend.dll
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.pdb
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.genruntimeconfig.cache
+C:\Users\Thilinika\Downloads\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\ref\projectBackend.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\appsettings.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.staticwebassets.endpoints.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.exe
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.deps.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.runtimeconfig.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\projectBackend.pdb
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\DnsClient.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Snappier.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.csproj.AssemblyReference.cache
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.AssemblyInfoInputs.cache
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.AssemblyInfo.cs
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.csproj.CoreCompileInputs.cache
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\scopedcss\bundle\projectBackend.styles.css
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.projectBackend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.projectBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.build.projectBackend.props
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.projectBackend.props
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.projectBackend.props
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectB.2EBF4CFC.Up2Date
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\refint\projectBackend.dll
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.pdb
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\projectBackend.genruntimeconfig.cache
+C:\Users\pramu\Downloads\projects-main (2)\projects-main\projects-main\projects\projectBackend\obj\Debug\net9.0\ref\projectBackend.dll
