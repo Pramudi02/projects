@@ -4,14 +4,15 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
 import { ProjectEditComponent } from './project-edit/project-edit.component';
 
-const routes: Routes = [
+// Exporting the routes variable
+export const routes: Routes = [
   { path: '', component: ProjectListComponent },
   { path: 'add', component: ProjectAddComponent },
   { path: 'edit/:id', component: ProjectEditComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes)], 
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
