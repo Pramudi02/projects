@@ -1,44 +1,45 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { CommonModule } from '@angular/common'; // Add CommonModule import
-import { FormsModule } from '@angular/forms';
+import { ProjectService } from '../project.service';
+import { Project } from '../project.model';
+import { ActivatedRoute, Router } from '@angular/router';
+import { FormsModule } from '@angular/forms'; 
 
 @Component({
-  selector: 'app-project-list',
-  standalone: true, // Make the component standalone
-  imports: [CommonModule, FormsModule], // Import CommonModule for common directives (like ngFor, etc.)
+  selector: 'app-project-edit',
+  standalone: true, // Ensure this is a standalone component
+  imports: [FormsModule],
   templateUrl: './project-edit.component.html',
   styleUrls: ['./project-edit.component.css']
 })
-
 export class ProjectEditComponent implements OnInit {
-  project: any = {};  // To hold the project data
-
-  // Mock project data to simulate the list of projects
-  mockProjects = [
-    { id: '1', name: 'Project 1', description: 'Description for Project 1' },
-    { id: '2', name: 'Project 2', description: 'Description for Project 2' },
-    { id: '3', name: 'Project 3', description: 'Description for Project 3' },
-  ];
-
-  constructor(private route: ActivatedRoute) {}
+  projectId: string = ''; // Default value
+  project: Project = {
+    id: '', // Default value for the `id`
+    title: '',
+    description: '',
+    technology: '',
+  };
+  constructor(
+    private projectService: ProjectService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      // Simulate getting a project by id
-      this.project = this.mockProjects.find(project => project.id === id) || {};
-    }
+    this.projectId = this.route.snapshot.paramMap.get('id') || '';
+    this.loadProject();
+  }
+  
+  loadProject(): void {
+    this.projectService.getProject(this.projectId).subscribe((data) => {
+      this.project = data;
+    });
   }
 
   updateProject(): void {
-    // Simulate updating a project
-    const index = this.mockProjects.findIndex(project => project.id === this.project.id);
-    if (index !== -1) {
-      this.mockProjects[index] = { ...this.project };  // Update the project in mock data
+    this.projectService.updateProject(this.projectId, this.project).subscribe(() => {
       alert('Project updated successfully!');
-    } else {
-      alert('Project not found!');
-    }
+      this.router.navigate(['/projects']);
+    });
   }
 }

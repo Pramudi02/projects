@@ -1,7 +1,9 @@
 <form (ngSubmit)="createProject()">
-    <input type="text" placeholder="Title" [(ngModel)]="project.title" name="title" required />
-    <textarea placeholder="Description" [(ngModel)]="project.description" name="description" required></textarea>
-    <input type="text" placeholder="Technology" [(ngModel)]="project.technology" name="technology" required />
-    <button type="submit">Add Project</button>
-  </form>
-  
+  <label>Title:</label>
+  <input type="text" [(ngModel)]="project.title" name="title"><br><br>
+  <label>Description:</label>
+  <textarea [(ngModel)]="project.description" name="description"></textarea><br><br>
+  <label>Technology:</label>
+  <input type="text" [(ngModel)]="project.technology" name="technology"><br><br>
+  <button type="submit">Create Project</button>
+</form>

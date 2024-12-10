@@ -1,35 +1,30 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Add CommonModule import
-import { FormsModule } from '@angular/forms';
+import { ProjectService } from '../project.service';
+import { Project } from '../project.model';
+import { FormsModule } from '@angular/forms'; 
+
 
 @Component({
   selector: 'app-project-add',
-  standalone: true, // Make the component standalone
-  imports: [CommonModule, FormsModule], // Import CommonModule for common directives (like ngFor, etc.)
+  standalone: true, // Ensure this is a standalone component
+  imports: [FormsModule],
   templateUrl: './project-add.component.html',
   styleUrls: ['./project-add.component.css']
 })
-
 export class ProjectAddComponent {
-  project = {
+  project: Project = {
+    id: '',
     title: '',
     description: '',
     technology: '',
   };
 
-  // Mock list of projects to simulate storing new project
-  mockProjects: any[] = [];
+  constructor(private projectService: ProjectService) {}
 
   createProject(): void {
-    // Simulate adding the project to the mock list
-    this.mockProjects.push({ ...this.project });
-    alert('Project created successfully!');
-    
-    // Optionally reset the form after adding the project
-    this.project = {
-      title: '',
-      description: '',
-      technology: '',
-    };
+    this.projectService.createProject(this.project).subscribe(() => {
+      alert('Project created successfully!');
+      this.project = { id: '', title: '', description: '', technology: '' }; // Reset the form
+    });
   }
 }

@@ -25,14 +25,14 @@ namespace projectBackend.Controllers
         public async Task<IActionResult> Create(Project project)
         {
             await _service.CreateAsync(project);
-            return Ok(project);
+            return CreatedAtAction(nameof(GetById), new { id = project.Id }, project);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, Project project)
         {
             await _service.UpdateAsync(id, project);
-            return Ok(project);
+            return NoContent();
         }
 
         [HttpDelete("{id}")]

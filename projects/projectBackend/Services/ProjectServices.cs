@@ -21,4 +21,3 @@ namespace projectBackend.Services
         public async Task DeleteAsync(string id) => await _projects.DeleteOneAsync(p => p.Id == id);
     }
 }
-

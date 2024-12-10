@@ -1,31 +1,35 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Add CommonModule import
-import { FormsModule } from '@angular/forms';
+import { ProjectService } from '../project.service';
+import { Project } from '../project.model';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-project-list',
-  standalone: true, // Make the component standalone
-  imports: [CommonModule, FormsModule], // Import CommonModule for common directives (like ngFor, etc.)
+  standalone: true, // Make sure this component is standalone
+  imports: [RouterModule,CommonModule],
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.css']
 })
-
 export class ProjectListComponent implements OnInit {
-  // Mock data to simulate projects
-  projects: any[] = [
-    { id: '1', name: 'Project 1', description: 'Description for Project 1' },
-    { id: '2', name: 'Project 2', description: 'Description for Project 2' },
-    { id: '3', name: 'Project 3', description: 'Description for Project 3' },
-  ];
+  projects: Project[] = [];
 
-  constructor() {}
+  constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
-    // No need to load projects from backend anymore
+    this.loadProjects();
+  }
+
+  loadProjects(): void {
+    this.projectService.getProjects().subscribe((data) => {
+      this.projects = data;
+    });
   }
 
   deleteProject(id: string): void {
-    // Remove project from the list using its id
-    this.projects = this.projects.filter(project => project.id !== id);
+    this.projectService.deleteProject(id).subscribe(() => {
+      this.loadProjects(); // Reload the project list after deletion
+    });
   }
 }
+
