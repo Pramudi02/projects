@@ -1,50 +1,87 @@
-/* General styles for the project card container */
+/* Container for each project card */
 .project-card {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 75%;  /* 75% of the parent container */
+  max-width: 800px;  /* Optional: to prevent the card from becoming too wide on larger screens */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the project card */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+.project-card h2 {
+  font-size: 24px;
+  color: #007bff;  /* Blue color for the title */
+  margin-bottom: 10px;
+}
+
+/* Description styling */
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Technology label styling */
+.project-card p strong {
+  color: #007bff;  /* Blue color for Technology label */
+}
+
+/* Button styling */
+.project-card .delete-btn,
+.project-card .edit-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* Delete button styling */
+.project-card .delete-btn {
+  background-color: #dc3545;  /* Red for delete button */
+  color: white;
+  border: none;
+}
+
+.project-card .delete-btn:hover {
+  background-color: #c82333;  /* Darker red on hover */
+}
+
+/* Edit button styling */
+.project-card .edit-btn {
+  background-color: #007bff;  /* Blue for edit button */
+  color: white;
+  border: none;
+}
+
+.project-card .edit-btn:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Spacing for the buttons */
+.project-card a,
+.project-card button {
+  margin-right: 10px;
+}
+
+/* Responsiveness: Ensure the card stays responsive on smaller screens */
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;  /* Increase width to 90% for smaller screens */
   }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Style for project title */
-  .project-card h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Style for project description */
-  .project-card p {
-    font-size: 1rem;
-    color: #555;
-    margin: 5px 0;
-  }
-  
-  /* Style for technology label */
-  .project-card p strong {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Button styles */
-  .project-card button {
-    background-color: #ff4d4f;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .project-card button:hover {
-    background-color: #d9362b;
-  }
-  
+}

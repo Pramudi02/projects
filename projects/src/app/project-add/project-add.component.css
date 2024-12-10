@@ -1,0 +1,71 @@
+/* Basic styles for the form */
+.project-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Form input styles */
+  .project-form .form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #007bff;  /* Blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+  }
+  
+  .project-form .form-input:focus {
+    outline: none;
+    border-color: #0056b3;  /* Darker blue on focus */
+    background-color: #e0f7ff;  /* Light blue background on focus */
+  }
+  
+  /* Label styles */
+  .project-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Button styles */
+  .project-form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;  /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-form .submit-btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+  }
+  
+  /* Spacing for the form */
+  .project-form br {
+    margin: 5px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .project-form {
+      padding: 15px;
+    }
+  
+    .project-form .form-input, .project-form .submit-btn {
+      font-size: 14px;
+    }
+  }
+  
