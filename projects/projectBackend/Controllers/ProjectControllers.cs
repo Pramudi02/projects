@@ -21,12 +21,24 @@ namespace projectBackend.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id) => Ok(await _service.GetByIdAsync(id));
 
+        // [HttpPost]
+        // public async Task<IActionResult> Create(Project project)
+        // {
+        //     await _service.CreateAsync(project);
+        //     return CreatedAtAction(nameof(GetById), new { id = project.Id }, project);
+        // }
         [HttpPost]
         public async Task<IActionResult> Create(Project project)
         {
+            if (project == null)
+            {
+                return BadRequest("Invalid project data.");
+            }
+
             await _service.CreateAsync(project);
             return CreatedAtAction(nameof(GetById), new { id = project.Id }, project);
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, Project project)

@@ -1,4 +1,7 @@
 <form (ngSubmit)="createProject()">
+  <label>ID:</label>
+  <input type="text" [(ngModel)]="project.id" name="id"><br><br>
+  <label>Description:</label>
   <label>Title:</label>
   <input type="text" [(ngModel)]="project.title" name="title"><br><br>
   <label>Description:</label>

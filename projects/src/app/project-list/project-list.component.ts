@@ -3,11 +3,13 @@ import { ProjectService } from '../project.service';
 import { Project } from '../project.model';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common'; 
+import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-project-list',
   standalone: true, // Make sure this component is standalone
-  imports: [RouterModule,CommonModule],
+  imports: [RouterModule,CommonModule,HttpClientModule],
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.css']
 })

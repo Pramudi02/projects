@@ -24,6 +24,7 @@ import { AppRoutingModule } from './app-routing.module';
     ProjectAddComponent,
     ProjectEditComponent
   ],
-  providers: [ProjectService]
+  providers: [ProjectService],
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }

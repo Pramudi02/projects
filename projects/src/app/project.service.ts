@@ -7,7 +7,7 @@ import { Project } from './project.model'; // Import the Project model
   providedIn: 'root',
 })
 export class ProjectService {
-  private apiUrl = 'http://localhost:5000/api/projects'; // Adjust API URL if needed
+  private apiUrl = 'http://localhost:5096/api/projects'; // Adjust API URL if needed
 
   constructor(private http: HttpClient) {}
 
@@ -25,6 +25,7 @@ export class ProjectService {
   createProject(project: Project): Observable<Project> {
     return this.http.post<Project>(this.apiUrl, project);
   }
+  
 
   // Update an existing project
   updateProject(id: string, project: Project): Observable<void> {

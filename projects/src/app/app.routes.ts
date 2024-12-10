@@ -7,7 +7,7 @@ import { ProjectEditComponent } from './project-edit/project-edit.component';
 // Exporting the routes variable
 export const routes: Routes = [
   { path: '', component: ProjectListComponent },
-  { path: 'add', component: ProjectAddComponent },
+  { path: 'add-project', component: ProjectAddComponent },
   { path: 'edit/:id', component: ProjectEditComponent },
 ];
 

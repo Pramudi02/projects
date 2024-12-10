@@ -3,11 +3,12 @@ import { ProjectService } from '../project.service';
 import { Project } from '../project.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule for making HTTP requests to the server
 
 @Component({
   selector: 'app-project-edit',
   standalone: true, // Ensure this is a standalone component
-  imports: [FormsModule],
+  imports: [FormsModule,HttpClientModule],
   templateUrl: './project-edit.component.html',
   styleUrls: ['./project-edit.component.css']
 })

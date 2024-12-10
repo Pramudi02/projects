@@ -25,6 +25,9 @@ export class ProjectAddComponent {
     this.projectService.createProject(this.project).subscribe(() => {
       alert('Project created successfully!');
       this.project = { id: '', title: '', description: '', technology: '' }; // Reset the form
-    });
+    },
+    (error) => {
+      alert('Error creating project:');}
+  );
   }
 }

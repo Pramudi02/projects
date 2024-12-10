@@ -4,8 +4,10 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
 import { ProjectEditComponent } from './project-edit/project-edit.component';
 
+// Correct import
+
 const routes: Routes = [
-  { path: 'projects', component: ProjectListComponent },
+  { path: '', component: ProjectListComponent },
   { path: 'add-project', component: ProjectAddComponent },
   { path: 'edit/:id', component: ProjectEditComponent },
 ];
