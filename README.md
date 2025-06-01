@@ -1,26 +1,105 @@
-# Portfolio Management System
-This project is a Portfolio Management System built with Angular for the frontend and .NET for the backend, using MongoDB as the database. The system enables users to perform CRUD operations (Create, Read, Update, Delete) on a list of projects, making it ideal for showcasing work portfolios or managing project details effectively. 
+# Project Management Application
 
-## Features
-Create Projects: Add new projects with details such as title, description, and technology used.
-Read Projects: View a list of all existing projects with essential information displayed in a clean, responsive UI.
-Update Projects: Edit existing project details using an intuitive form interface.
-Delete Projects: Remove projects you no longer need with a simple action.
+A modern project management application built with Angular and .NET, featuring a stunning glassmorphism design system.
 
-## Technologies Used
-### Frontend:
-Framework: Angular
-Styling: CSS with a white-and-blue theme
-### Backend:
-Framework: .NET
-API: RESTful APIs for CRUD operations
-### Database:
-Type: MongoDB
-Connection String: mongodb://localhost:27017/portfolio
-Collection: project
+## 🎨 Design Features
 
-## Usage
-Homepage: Displays the list of all projects.
-Add Project Page: Navigate to the "Add Project" page using the navigation bar.
-Edit Project: Use the "Edit" button on any project card to update details.
-Delete Project: Click the "Delete" button on a project card to remove it from the list.
+- **Glassmorphism UI**: Modern, translucent interface elements with frosted glass effects
+- **Responsive Design**: Fully responsive grid layouts that adapt to all screen sizes
+- **Dark Theme**: Elegant dark theme with gradient backgrounds
+- **Modern Animations**: Smooth transitions and hover effects throughout the application
+- **Technology Badges**: Visual indicators for project technologies
+
+## 🚀 Tech Stack
+
+- **Frontend**: Angular (Latest version)
+- **Backend**: .NET 8.0
+- **Database**: MongoDB
+- **Styling**: SCSS with custom glassmorphism effects
+
+## 📋 Prerequisites
+
+- Node.js (Latest LTS version)
+- .NET SDK 8.0
+- MongoDB
+- Angular CLI
+
+## 🛠️ Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone [repository-url]
+   cd projects
+   ```
+
+2. **Backend Setup**
+   ```bash
+   cd Backend
+   dotnet restore
+   dotnet build
+   dotnet run
+   ```
+
+3. **Frontend Setup**
+   ```bash
+   cd Frontend
+   npm install
+   ng serve
+   ```
+
+4. **MongoDB Setup**
+   - Ensure MongoDB is running locally
+   - Update connection string in appsettings.json if needed
+
+## 🎯 Features
+
+- **Project Management**
+  - Create, read, update, and delete projects
+  - Modern card-based project listing
+  - Detailed project editing interface
+
+- **UI Components**
+  - Glass-effect cards with hover animations
+  - Responsive grid system
+  - Modern button designs
+  - Interactive technology badges
+
+## 💅 Styling System
+
+The application uses a custom-built styling system featuring:
+
+- **Glass Effects**: 
+  ```scss
+  backdrop-filter: blur()
+  background: rgba() with gradient overlays
+  ```
+- **Color Scheme**: 
+  - Dark theme with carefully selected opacity levels
+  - Gradient backgrounds
+  - High contrast text for accessibility
+
+- **Responsive Grid**: 
+  - Flexbox and CSS Grid combinations
+  - Mobile-first approach
+  - Adaptive layouts
+
+## 🔧 Known Issues
+
+- Component visibility issues being addressed
+- Navigation system under refinement
+- Project-edit component styling updates in progress
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
