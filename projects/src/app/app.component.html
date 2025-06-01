@@ -1,11 +1,21 @@
+<body>
+  <div class="navbar">
+    <ul class="navbar-menu">
+      <li><a class="navbar-link" routerLink="/">Project List</a></li>
+      <li><a class="navbar-link" routerLink="/add-project">Add Project</a></li>
+    </ul>
+  </div>
 
-<div class="navbar">
-  <ul class="navbar-menu">
-    <li><a class="navbar-link" routerLink="/">Project List</a></li>
-    <li><a class="navbar-link" routerLink="/add-project">Add Project</a></li>
-  </ul>
-</div>
+  <div class="main-content">
 
-<div class="main-content">
-  <router-outlet></router-outlet>
-</div>
+    <router-outlet></router-outlet>
+    <div class="alert">
+    <app-alert
+    [show]="alert.show"
+    [message]="alert.message"
+    [type]="alert.type"
+    (closeAlert)="closeAlert()">
+  </app-alert>
+    </div>
+  </div>
+</body>
