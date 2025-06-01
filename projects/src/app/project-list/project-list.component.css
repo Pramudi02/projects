@@ -1,87 +1,179 @@
-/* Container for each project card */
-.project-card {
-  width: 75%;  /* 75% of the parent container */
-  max-width: 800px;  /* Optional: to prevent the card from becoming too wide on larger screens */
-  margin: 20px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Modern Glassmorphism Card Styles */
+:root {
+  --glass-bg: #2563eb1a;
+  --glass-border: rgba(37, 99, 235, 0.2);
+  --glass-shadow: rgba(37, 99, 235, 0.15);
+  --text-primary: #1e40af;
+  --text-secondary: #60a5fa;
+  --text-body: #334155;
+  --glow-blue: rgba(37, 99, 235, 0.5);
 }
 
-/* Hover effect for the project card */
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.grid {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--background-start), var(--background-end));
+  min-height: 100vh;
 }
 
-/* Heading styles */
-.project-card h2 {
-  font-size: 24px;
-  color: #007bff;  /* Blue color for the title */
-  margin-bottom: 10px;
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* Description styling */
-.project-card p {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #555;
+.glass-card {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Technology label styling */
-.project-card p strong {
-  color: #007bff;  /* Blue color for Technology label */
+.card-content {
+  flex: 1;
 }
 
-/* Button styling */
-.project-card .delete-btn,
-.project-card .edit-btn {
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  margin-top: 10px;
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-light);
+  position: relative;
+  padding-bottom: var(--spacing-xs);
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-light), transparent);
+}
+
+.description {
+  color: var(--text-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.9;
+}
+
+.tech-badge {
   display: inline-block;
-  transition: background-color 0.3s ease;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: rgba(96, 165, 250, 0.221);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: var(--radius-full);
+  color: rgb(194, 226, 255);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
 }
 
-/* Delete button styling */
-.project-card .delete-btn {
-  background-color: #dc3545;  /* Red for delete button */
-  color: white;
-  border: none;
+.card-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
 }
 
-.project-card .delete-btn:hover {
-  background-color: #c82333;  /* Darker red on hover */
+.glass-btn {
+  flex: 1;
+  text-align: center;
 }
 
-/* Edit button styling */
-.project-card .edit-btn {
-  background-color: #007bff;  /* Blue for edit button */
-  color: white;
-  border: none;
+.glass-btn i {
+  margin-right: var(--spacing-xs);
 }
 
-.project-card .edit-btn:hover {
-  background-color: #0056b3;  /* Darker blue on hover */
+.glass-btn-danger {
+  background: rgba(239, 68, 68, 0.386);
+  border-color: rgba(239, 68, 68, 0.2);
+  color: #2e0000;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-/* Spacing for the buttons */
-.project-card a,
-.project-card button {
-  margin-right: 10px;
+.glass-btn-danger:hover {
+  background: rgba(239, 68, 68, 0.2);
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.15);
 }
 
-/* Responsiveness: Ensure the card stays responsive on smaller screens */
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl);
+  margin: var(--spacing-lg) auto;
+  max-width: 500px;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.empty-state p {
+  color: var(--text-main);
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1400px) {
+  .glass-card {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .glass-card {
+    min-height: 240px;
+  }
+}
+
 @media (max-width: 768px) {
-  .project-card {
-    width: 90%;  /* Increase width to 90% for smaller screens */
+  .glass-card {
+    min-height: auto;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .empty-state {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-md) auto;
+  }
+}
+
+/* Alert styles */
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  min-width: 300px;
+  max-width: 400px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

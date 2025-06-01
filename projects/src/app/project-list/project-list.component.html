@@ -1,8 +1,32 @@
+<div class="container">
+  <div class="grid grid-cols-3">
+    <div *ngFor="let project of projects" class="glass-card fade-in">
+      <div class="card-content">
+        <h2>{{ project.title }}</h2>
+        <p class="description">{{ project.description }}</p>
+        <div class="tech-badge">
+          {{ project.technology }}
+        </div>
+      </div>
+      <div class="card-actions">
+        <a [routerLink]="['/edit', project.id]" class="glass-btn">
+          <i class="fas fa-edit"></i>
+          Edit
+        </a>
+        <button (click)="deleteProject(project.id)" class="glass-btn glass-btn-danger">
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
 
-<div *ngFor="let project of projects" class="project-card">
-  <h2>{{ project.title }}</h2>
-  <p>{{ project.description }}</p>
-  <p><strong>Technology:</strong> {{ project.technology }}</p>
-  <button (click)="deleteProject(project.id)" class="delete-btn">Delete</button>
-  <a [routerLink]="['/edit', project.id]" class="edit-btn">Edit</a>
+  <div *ngIf="projects.length === 0" class="empty-state glass-card fade-in">
+    <h3>No Projects Yet</h3>
+    <p>Start by creating your first project!</p>
+    <a routerLink="/add" class="glass-btn">
+      <i class="fas fa-plus"></i>
+      Create Project
+    </a>
+  </div>
 </div>
