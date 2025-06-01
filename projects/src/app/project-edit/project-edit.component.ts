@@ -1,46 +1,80 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, RouterModule } from '@angular/router';
 import { ProjectService } from '../project.service';
 import { Project } from '../project.model';
-import { ActivatedRoute, Router } from '@angular/router';
-import { FormsModule } from '@angular/forms'; 
-import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule for making HTTP requests to the server
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { AlertComponent } from '../alert/alert.component';
 
 @Component({
   selector: 'app-project-edit',
-  standalone: true, // Ensure this is a standalone component
-  imports: [FormsModule,HttpClientModule],
+  standalone: true,
+  imports: [FormsModule, RouterModule, CommonModule, AlertComponent],
   templateUrl: './project-edit.component.html',
   styleUrls: ['./project-edit.component.css']
 })
 export class ProjectEditComponent implements OnInit {
-  projectId: string = ''; // Default value
   project: Project = {
-    id: '', // Default value for the `id`
+    id: '',
     title: '',
     description: '',
-    technology: '',
+    technology: ''
   };
+
+  alert = {
+    show: false,
+    message: '',
+    type: 'success' as 'success' | 'error'
+  };
+
   constructor(
     private projectService: ProjectService,
-    private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    this.projectId = this.route.snapshot.paramMap.get('id') || '';
-    this.loadProject();
-  }
-  
-  loadProject(): void {
-    this.projectService.getProject(this.projectId).subscribe((data) => {
-      this.project = data;
+    const id = this.route.snapshot.params['id'];
+    this.projectService.getProject(id).subscribe({
+      next: (project) => {
+        this.project = project;
+      },
+      error: (error) => {
+        console.error('Error fetching project:', error);
+        this.showAlert('Error loading project. Please try again.', 'error');
+      }
     });
   }
 
   updateProject(): void {
-    this.projectService.updateProject(this.projectId, this.project).subscribe(() => {
-      alert('Project updated successfully!');
-      this.router.navigate(['/projects']);
+    if (!this.project.title || !this.project.description || !this.project.technology) {
+      this.showAlert('Please fill in all required fields', 'error');
+      return;
+    }
+
+    this.projectService.updateProject(this.project.id, this.project).subscribe({
+      next: () => {
+        this.showAlert('Project updated successfully!', 'success');
+        setTimeout(() => {
+          this.router.navigate(['/']);
+        }, 2000);
+      },
+      error: (error) => {
+        console.error('Error updating project:', error);
+        this.showAlert('Error updating project. Please try again.', 'error');
+      }
     });
+  }
+
+  showAlert(message: string, type: 'success' | 'error'): void {
+    this.alert = {
+      show: true,
+      message,
+      type
+    };
+  }
+
+  closeAlert(): void {
+    this.alert.show = false;
   }
 }
